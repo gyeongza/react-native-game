@@ -1,12 +1,16 @@
-import 'react-native-gesture-handler';
-
+import { SafeAreaView, View } from 'react-native';
+import BirdShitGame from './components/BirdShitGame';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import GameScreen from './components/GameScreen';
+import SnakeGame from './components/SnakeGame';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-export default function App() {
+// 메인 게임 컴포넌트
+const App = () => {
   return (
-    <SafeAreaProvider>
-      <GameScreen />
-    </SafeAreaProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SnakeGame />
+    </GestureHandlerRootView>
   );
-}
+};
+
+export default App;
