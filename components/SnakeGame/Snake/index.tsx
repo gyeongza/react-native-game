@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
-import { Coordinate } from '../../types/types';
+import { Coordinate } from '../../../types/types';
 import { Fragment } from 'react';
-import { Colors } from '../../styles/colors';
+import { Colors } from '../../../styles/colors';
 
 interface SnakeProps {
   snake: Coordinate[];

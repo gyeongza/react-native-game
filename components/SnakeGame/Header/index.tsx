@@ -1,7 +1,7 @@
 import { TouchableOpacity, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-import { Colors } from '../../styles/colors';
+import { Colors } from '../../../styles/colors';
 
 interface HeaderProps {
   reloadGame: () => void;

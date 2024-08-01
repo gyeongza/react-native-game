@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import { PanGestureHandler } from 'react-native-gesture-handler';
-import { Colors } from '../styles/colors';
-import { Direction, Coordinate, GestureEventType } from '../types/types';
-import { checkGameOver } from '../utils/checkGameOver';
-import { randomFoodPosition } from '../utils/randomFoodPosition';
+import { Colors } from '../../styles/colors';
+import { Direction, Coordinate, GestureEventType } from '../../types/types';
+import { checkGameOver } from '../../utils/checkGameOver';
+import { randomFoodPosition } from '../../utils/randomFoodPosition';
 import Food from './Food';
 import Header from './Header';
 import Score from './Score';
 import Snake from './Snake';
-import { checkFood } from '../utils/checkEatsFood';
+import { checkFood } from '../../utils/checkEatsFood';
 
 const SNAKE_INITIAL_POSITION = [{ x: 5, y: 5 }];
 const FOOD_INITIAL_POSITION = { x: 5, y: 20 };

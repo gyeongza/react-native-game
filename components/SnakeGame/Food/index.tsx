@@ -1,5 +1,5 @@
 import { StyleSheet, Text } from 'react-native';
-import { Coordinate } from '../../types/types';
+import { Coordinate } from '../../../types/types';
 
 const Food = ({ x, y }: Coordinate) => {
   return <Text style={[{ top: y * 10, left: x * 10 }, styles.food]}>🪳</Text>;
